@@ -2,8 +2,7 @@
 
 ## What is mdBook?
 
-> "mdBook is a utility to create modern online books from Markdown files"
-
+> Test page
 
 ## Resources
 
