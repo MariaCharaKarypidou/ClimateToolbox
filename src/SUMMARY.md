@@ -1,6 +1,7 @@
 # Summary
 
 - [mdBook Quickstart](README.md)
+- [Kinematics](kinematics.md)
 - [Chapter 1](chapter-1.md)
 - [Chapter 2](chapter-2.md)
 - [Foo](foo/README.md)
