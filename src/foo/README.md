@@ -1,1 +1,0 @@
-# Kinematics in the atmosphere
