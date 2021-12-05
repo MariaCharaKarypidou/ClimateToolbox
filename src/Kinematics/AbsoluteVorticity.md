@@ -1,7 +1,7 @@
 # Absolute Vorticity
 
 <footer>
-<p style="float:left; width: 10%;">
+<p style="float:left; width: 100%;">
 Copyright © Maria Chara Karypidou, 2021
 </p>
 <p style="float:left; width: 20%; text-align:center;">
