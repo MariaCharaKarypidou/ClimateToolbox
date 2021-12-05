@@ -1,7 +1,6 @@
 # Climate Toolbox
 
-Welcome to the demo site for mkBook Quickstart.
-
-View source:
-
-Maria Chara Karypidou
+Hi! \\
+My name is Maria Chara Karypidou and I am a PhD candidate in Climatology. \\
+I am located at the Department of Meteorology and Climatology, at the Aristotle University of Thessaloniki, in Greece. \\
+This tiny dot of the internet is my attempt to communicate bits of code with some functionality in climate sciences. \\
