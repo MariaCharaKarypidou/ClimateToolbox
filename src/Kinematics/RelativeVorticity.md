@@ -9,16 +9,9 @@ Text
 <div align="center">
     
 <a href="https://mariacharakarypidou.github.io/ClimateToolbox/Kinematics/RelativeVorticity.html">
-    <img src="/src/Kinematics/img/ECMWF_RelVort_250hPa.png" alt="Sample screenshot" title="Sample screenshot" width="500" />
+    <img src="/src/Kinematics/img/ECMWF_RelVort_250hPa.png" alt="Sample screenshot" title="Sample screenshot" width="800" />
 </a>
     
-<br>
-
-![Relative Vorticity at 05/12/2021 (12:00 UTC) at 250 hPa from ECMWF](/src/Kinematics/img/ECMWF_RelVort_250hPa.png)
-\
-\
-Text
-![Relative Vorticity at 05/12/2021 (12:00 UTC) at 850 hPa from ECMWF](/src/Kinematics/img/ECMWF_RelVort_850hPa.png)
 
 
 ## Theory
