@@ -1,6 +1,6 @@
 # Relative Vorticity
 
-In a way, wind is in a continuous dance mode around the globe. Nonetheless, it is also performing a local dance, spinning around itself, like the greek dance zeibekiko. Briefly, relative vorticity is a measure of the spin that wind has! 
+In a way, wind is in a continuous dance mode around the globe. Nonetheless, it is also performing a local dance, spinning around itself, like the greek dance zeibekiko. In dynamic meteorology, this movement of the wind is described by a quantity termed as "relative vorticity". Briefly, relative vorticity is a measure of the spin that wind has! 
 
 ## Theory
 
