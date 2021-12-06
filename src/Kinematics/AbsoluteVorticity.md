@@ -1,5 +1,7 @@
 # Absolute Vorticity
 
+## First Thoughts
+
 ## Theory
 
 ## Code
