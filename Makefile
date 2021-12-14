@@ -17,7 +17,10 @@ install:
 
 s serve:
 	mdbook serve
-
+	
+.MathJax {
+  font-size: 120% !important;
+}
 
 build:
 	mdbook build
