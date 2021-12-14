@@ -4,6 +4,7 @@ In a way, wind is in a continuous dance mode around the globe. Nonetheless, it i
 
 ## First Thoughts
 
+<“img src=”/src/Kinematics/img/ECMWF_RelVort_250hPa.png">
   
 <a href="https://mariacharakarypidou.github.io/ClimateToolbox/Kinematics/RelativeVorticity.html">
     <img src="/src/Kinematics/img/ECMWF_RelVort_250hPa.png" alt="Sample screenshot1" title="Sample screenshot" width="800" />
