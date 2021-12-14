@@ -4,7 +4,6 @@ In a way, wind is in a continuous dance mode around the globe. Nonetheless, it i
 
 ## First Thoughts
 
-<img src=”/src/Kinematics/img/ECMWF_RelVort_250hPa.png">
   
 <a href="/src/Kinematics/img/ECMWF_RelVort_250hPa.png">
     <img src="/src/Kinematics/img/ECMWF_RelVort_250hPa.png" alt="Sample screenshot1" title="Sample screenshot" width="800" />
@@ -21,7 +20,7 @@ In a way, wind is in a continuous dance mode around the globe. Nonetheless, it i
 ## Theory
 
 ## Code
-This <a href="https://unidata.github.io/MetPy/latest/index.html#"> Something </a>                                                                                                                          
+This tutorial is based on the <a href="https://unidata.github.io/MetPy/latest/index.html#"> MetPy </a> Python library and exploits the <a href="https://unidata.github.io/MetPy/latest/api/generated/metpy.calc.vorticity.html?highlight=vorticity#metpy.calc.vorticity"> vorticity </a> function.                                                                                                                        
 
 ```
 from matplotlib import pyplot
@@ -41,9 +40,7 @@ import cartopy.crs as ccrs
 import matplotlib
 import numpy as np
 import matplotlib.pyplot as plt
-import datetime
 import cartopy.feature as cfeature
-import mygrads as mg
 #
 root_dir = '/users/pr007/mkaryp/vorticity/'
 nc = Dataset(root_dir+'ERA5_daymean_monmean_merge_850.nc')
