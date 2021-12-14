@@ -162,7 +162,6 @@ Copyright © Maria Chara Karypidou, 2021
 <div style="break-before: page; page-break-before: always;"></div><h1 id="relative-vorticity"><a class="header" href="#relative-vorticity">Relative Vorticity</a></h1>
 <p>In a way, wind is in a continuous dance mode around the globe. Nonetheless, it is also performing a local dance, spinning around itself, like the greek dance zeibekiko. In dynamic meteorology, this movement of the wind is described by a quantity termed as &quot;relative vorticity&quot;. Briefly, relative vorticity is a measure of the spin that wind has! </p>
 <h2 id="first-thoughts"><a class="header" href="#first-thoughts">First Thoughts</a></h2>
-<p>&lt;img src=”/src/Kinematics/img/ECMWF_RelVort_250hPa.png&quot;&gt;</p>
 <a href="Kinematics//src/Kinematics/img/ECMWF_RelVort_250hPa.png">
     <img src="Kinematics//src/Kinematics/img/ECMWF_RelVort_250hPa.png" alt="Sample screenshot1" title="Sample screenshot" width="800" />
 </a>
@@ -171,7 +170,7 @@ Copyright © Maria Chara Karypidou, 2021
 </a>
 <h2 id="theory"><a class="header" href="#theory">Theory</a></h2>
 <h2 id="code"><a class="header" href="#code">Code</a></h2>
-<p>This <a href="https://unidata.github.io/MetPy/latest/index.html#"> Something </a></p>
+<p>This tutorial is based on the <a href="https://unidata.github.io/MetPy/latest/index.html#"> MetPy </a> Python library and exploits the <a href="https://unidata.github.io/MetPy/latest/api/generated/metpy.calc.vorticity.html?highlight=vorticity#metpy.calc.vorticity"> vorticity </a> function.</p>
 <pre><code>from matplotlib import pyplot
 from matplotlib.cm import get_cmap
 from __future__ import print_function
@@ -189,9 +188,7 @@ import cartopy.crs as ccrs
 import matplotlib
 import numpy as np
 import matplotlib.pyplot as plt
-import datetime
 import cartopy.feature as cfeature
-import mygrads as mg
 #
 root_dir = '/users/pr007/mkaryp/vorticity/'
 nc = Dataset(root_dir+'ERA5_daymean_monmean_merge_850.nc')
