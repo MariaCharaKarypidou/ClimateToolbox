@@ -5,20 +5,10 @@ In a way, wind is in a continuous dance mode around the globe. Nonetheless, it i
 ## First Thoughts
 
 
-<img width="200" alt="portfolio_view" src="/src/Kinematics/img/ECMWF_RelVort_250hPa.png">
+<img width="800" alt="portfolio_view" src="/src/Kinematics/img/ECMWF_RelVort_250hPa.png">
+
+<img width="800" alt="portfolio_view" src="/src/Kinematics/img/ECMWF_RelVort_850hPa.png">
   
-<a href="/src/Kinematics/img/ECMWF_RelVort_250hPa.png">
-    <img src="/src/Kinematics/img/ECMWF_RelVort_250hPa.png" alt="Sample screenshot1" title="Sample screenshot" width="800" />
-</a>
-
-
-  
-<a href="https://mariacharakarypidou.github.io/ClimateToolbox/Kinematics/RelativeVorticity.html">
-    <img src="/src/Kinematics/img/ECMWF_RelVort_850hPa.png" alt="Sample screenshot1" title="Sample screenshot" width="800" />
-</a>
-    
-    
-
 ## Theory
 
 ## Code
