@@ -30,6 +30,13 @@ def vorticity(u, v, *, dx=None, dy=None, x_dim=-1, y_dim=-2):
     r"""Calculate the vertical vorticity of the horizontal wind.
 
 ```
+The key information is provided in lines 65-57, where we see that <img src="https://render.githubusercontent.com/render/math?math=\frac{\partial v}{\partial x} = \frac{\partial u}{\partial y}">
+
+```
+dudy = first_derivative(u, delta=dy, axis=y_dim)
+dvdx = first_derivative(v, delta=dx, axis=x_dim)
+return dvdx - dudy
+```
 
 ```
 from matplotlib import pyplot
