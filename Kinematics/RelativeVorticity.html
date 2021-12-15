@@ -239,8 +239,8 @@ variables:
 </code></pre>
 <p>The file contains mean monthly data from 1986-2005 of U and V wind components at 800hPa.</p>
 <img src="./u-wind.png">
-<pre><code># Not all packages and functions are necessary for this excercise, however, if you have those installed in your environment already, then you are ready to do pretty much everything in python (import data, analyze, plot etc.)
-#
+<p>So, moving to the python code, we first have to load all packages and functions we will use. </p>
+<pre><code># 
 from matplotlib import pyplot
 from matplotlib.cm import get_cmap
 from __future__ import print_function
@@ -260,36 +260,44 @@ import numpy as np
 import matplotlib.pyplot as plt
 import cartopy.feature as cfeature
 #
-root_dir = '/users/pr007/mkaryp/vorticity/'
-nc = Dataset(root_dir+'ERA5_daymean_monmean_merge_850.nc')
-#
-lon=nc.variables['longitude'][:]
-lat=nc.variables['latitude'][:]
-#
-dx, dy = mpcalc.lat_lon_grid_deltas(lon, lat)
-#
-u = []
-v = []
-vort = []
-#
-for i in range(240):
-    v.append(np.array(nc.variables['v'][i,:,:]))                    
-    u.append(np.array(nc.variables['u'][i,:,:]))
-    v[i] = units.Quantity(v[i], 'm/s')
-    u[i] = units.Quantity(u[i], 'm/s')
-    vort.append(np.array(mpcalc.vorticity(u[i], v[i], dx=dx, dy=dy)))
-    #
-    print(i)
-#
-np.shape(vort)
-#
-#
 </code></pre>
-<footer>
-<p style="float:left; width: 100%;">
+<p>We continue by setting our path:</p>
+<pre><code>root_dir = '/users/pr007/mkaryp/vorticity/'
+</code></pre>
+<p>And load in our NetCDF file:</p>
+<pre><code>nc = Dataset(root_dir+'ERA5_daymean_monmean_merge_850.nc')
+</code></pre>
+<h1 id=""><a class="header" href="#"></a></h1>
+<p>lon=nc.variables['longitude'][:]
+lat=nc.variables['latitude'][:]</p>
+<h1 id="-1"><a class="header" href="#-1"></a></h1>
+<p>dx, dy = mpcalc.lat_lon_grid_deltas(lon, lat)</p>
+<h1 id="-2"><a class="header" href="#-2"></a></h1>
+<p>u = []
+v = []
+vort = []</p>
+<h1 id="-3"><a class="header" href="#-3"></a></h1>
+<p>for i in range(240):
+v.append(np.array(nc.variables['v'][i,:,:]))<br />
+u.append(np.array(nc.variables['u'][i,:,:]))
+v[i] = units.Quantity(v[i], 'm/s')
+u[i] = units.Quantity(u[i], 'm/s')
+vort.append(np.array(mpcalc.vorticity(u[i], v[i], dx=dx, dy=dy)))
+#
+print(i)</p>
+<h1 id="-4"><a class="header" href="#-4"></a></h1>
+<p>np.shape(vort)</p>
+<h1 id="-5"><a class="header" href="#-5"></a></h1>
+<h1 id="-6"><a class="header" href="#-6"></a></h1>
+<pre><code>    
+&lt;footer&gt;
+&lt;p style=&quot;float:left; width: 100%;&quot;&gt;
 Copyright © Maria Chara Karypidou, 2021
-</p>
-</footer>
+&lt;/p&gt;
+&lt;/footer&gt;
+
+
+</code></pre>
 
                     </main>
 
