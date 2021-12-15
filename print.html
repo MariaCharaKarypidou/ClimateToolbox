@@ -169,16 +169,16 @@ Copyright © Maria Chara Karypidou, 2021
 <div style="break-before: page; page-break-before: always;"></div><h1 id="relative-vorticity"><a class="header" href="#relative-vorticity">Relative Vorticity</a></h1>
 <p>In a way, wind is in a continuous dance mode around the globe. Nonetheless, it is also performing a local dance, spinning around itself. In dynamic meteorology, this movement of the wind is described by a quantity termed as &quot;relative vorticity&quot;. Briefly, relative vorticity is a measure of the spin of an air mass. </p>
 <h2 id="first-thoughts"><a class="header" href="#first-thoughts">First Thoughts</a></h2>
-<p>Relative vorticity is an invaluable variable for meteorologists and climatologists. </p>
+<p>Relative vorticity is an invaluable variable for meteorologists and climatologists. It can be very &quot;noisy&quot; at the lower troposphere (850 hPa), but it can provide very indicative information about atmospheric disturbances at the middle or higher troposphere (250 hPa).</p>
 <p align="center">
   <img src="Kinematics/./ECMWF_RelVort_250hPa.png" width="600">
   <br>
-    <em>Relative vorticity at 250 hPa from the ECMWF forecasting system for 6 December 2021 at 12.00 UTC over southern Africa </em>
+    <em>Relative vorticity at 250 hPa from the ECMWF forecasting system for 6 December 2021 at 12.00 UTC over southern Africa.</em>
 </p>
 <p align="center">
   <img src="Kinematics/./ECMWF_RelVort_850hPa.png" width="600">
   <br>
-    <em>Relative vorticity at 850 hPa from the ECMWF forecasting system for 6 December 2021 at 12.00 UTC over southern Africa </em>
+    <em>Relative vorticity at 850 hPa from the ECMWF forecasting system for 6 December 2021 at 12.00 UTC over southern Africa.</em>
 </p>
 <h2 id="theory"><a class="header" href="#theory">Theory</a></h2>
 <p>Theory is taken from the book <a href="https://www.amazon.com/Introduction-Dynamic-Meteorology-International-Geophysics/dp/0123848660"> &quot;An Introduction to Dynamic Meteorology&quot; </a> by James R. Holton and Gregory J. Hakim.</p>
@@ -271,7 +271,11 @@ variables:
 
 </code></pre>
 <p>The file contains mean monthly data from 1986-2005 of U and V wind components at 800hPa (240 timesteps in total).</p>
-<img src="Kinematics/./u-wind.png"  description="ERA5 data over southern Africa. Map displays the first timestep 1986/01 of the U-Wind component.">
+<p align="center">
+  <img src="Kinematics/./u-wind.png" width="400">
+  <br>
+    <em>ERA5 data over southern Africa. Map displays the first timestep 1986/01 of the U-Wind component.</em>
+</p>
 <p>So, moving to the python code, we first have to load all packages and functions we will use. </p>
 <pre><code># 
 from matplotlib import pyplot
@@ -350,7 +354,11 @@ fig.savefig('ERA5_vort_tutorial_1-1-1986.png', format='png', dpi=300)
 #
 </code></pre>
 <p>The resulting map is displayed below. All negative values indicate cyclonic relative vorticity (remember that we are in the southern hemisphere) and all positive values display anticyclonic relative vorticity.</p>
-<img src="Kinematics/./ERA5_VORT.png">
+<p align="center">
+  <img src="Kinematics/./ERA5_VORT.png"" width="400">
+  <br>
+    <em>Relative vorticity at 800 hPa for 1986/01 constructed using U and V wind components from ERA5 reanalysis data over southern Africa.</em>
+</p>
 <footer>
 <p style="float:left; width: 100%;">
 Copyright © Maria Chara Karypidou, 2021
