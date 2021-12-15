@@ -13,7 +13,7 @@ In a way, wind is in a continuous dance mode around the globe. Nonetheless, it i
 
 ## Code
 This tutorial is based on the <a href="https://unidata.github.io/MetPy/latest/index.html#"> MetPy </a> Python library and exploits the <a href="https://unidata.github.io/MetPy/latest/api/generated/metpy.calc.vorticity.html?highlight=vorticity#metpy.calc.vorticity"> vorticity </a> function. \
-Before using the <a href="https://unidata.github.io/MetPy/latest/api/generated/metpy.calc.vorticity.html?highlight=vorticity#metpy.calc.vorticity"> vorticity </a> function, let's take a look at the code. <a href="https://github.com/Unidata/MetPy"> MetPy's repository </a> is openly accesible in Github, making our lives easier. If we move to the source code of the <a href="https://github.com/Unidata/MetPy/blob/main/src/metpy/calc/kinematics.py"> Kinematics </a> funtions and look within lines 26-67, we will have a closer look of what happens within the function. /
+Before using the <a href="https://unidata.github.io/MetPy/latest/api/generated/metpy.calc.vorticity.html?highlight=vorticity#metpy.calc.vorticity"> vorticity </a> function, let's take a look at the code. <a href="https://github.com/Unidata/MetPy"> MetPy's repository </a> is openly accesible in Github, making our lives easier. If we move to the source code of the <a href="https://github.com/Unidata/MetPy/blob/main/src/metpy/calc/kinematics.py"> Kinematics </a> funtions and look within lines 26-67, we will have a closer look of what happens within the function. 
 
 As we see, the <a href="https://unidata.github.io/MetPy/latest/api/generated/metpy.calc.vorticity.html?highlight=vorticity#metpy.calc.vorticity"> vorticity </a> function requires the U and V wind components as input. In addition, some information about the dx and dy is required, referring to the grid spacing on the x and the y-axis.
 
@@ -23,6 +23,8 @@ def vorticity(u, v, *, dx=None, dy=None, x_dim=-1, y_dim=-2):
 
 ```
 The key information is provided in lines 65-57, where we see that <img src="https://render.githubusercontent.com/render/math?math=\frac{\partial v}{\partial x} = \frac{\partial u}{\partial y}">
+
+![\Large \frac{\partial v}{\partial x} = \frac{\partial u}{\partial y}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}) 
 
 
 ```
