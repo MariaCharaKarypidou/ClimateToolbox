@@ -17,13 +17,13 @@ According to them, "Vorticity, the microscopic measure of rotation in a fluid, i
 
 <img src="https://render.githubusercontent.com/render/math?math=\LARGE \omega_\alpha \equiv \nabla\times \U_\alpha">, <img src="https://render.githubusercontent.com/render/math?math=\LARGE \omega \equiv \nabla\times \U">
 
-which in Cartesian coordinates is analyzed to the following:\
+which in Cartesian coordinates is analyzed to the following:
 
 <img src="https://render.githubusercontent.com/render/math?math=\LARGE \omega = (\frac{\partial w}{\partial y} - \frac{\partial v}{\partial z}, \frac{\partial u}{\partial z} - \frac{\partial w}{\partial x}, \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y})">
 
+After performing scale analysis on the above equation, it appears that the horizontal components are negligible, and therefore only the vertical component is used, leading to the following equation for relative vorticity:
 
-
-The partial derivatives are then subtracted using the formula: <img src="https://render.githubusercontent.com/render/math?math=\LARGE \zeta = \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y}">. 
+<img src="https://render.githubusercontent.com/render/math?math=\LARGE \zeta = \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y}">. 
 
 
 
