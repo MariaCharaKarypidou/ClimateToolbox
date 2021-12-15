@@ -173,7 +173,9 @@ Before using the <a href="https://unidata.github.io/MetPy/latest/api/generated/m
     r&quot;&quot;&quot;Calculate the vertical vorticity of the horizontal wind.
 
 </code></pre>
-<p>The key information is provided in lines 65-57, where we see that <img src="https://render.githubusercontent.com/render/math?math=\frac{\partial v}{\partial x} = \frac{\partial u}{\partial y}"></p>
+<p>The key information is provided in lines 65-57, where we see that ![formula](https://render.githubusercontent.com/render/math?math=\frac{\partial v}{\partial x} = \frac{\partial u}{\partial y})</p>
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+<p>![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)</p>
 <pre><code>dudy = first_derivative(u, delta=dy, axis=y_dim)
 dvdx = first_derivative(v, delta=dx, axis=x_dim)
 return dvdx - dudy
