@@ -121,7 +121,7 @@ variables:
 ```
 The file contains mean monthly data from 1986-2005 of U and V wind components at 800hPa (240 timesteps in total).  
 
-<img src="./u-wind.png"  alt="ERA5 data over southern Africa. Map displays the first timestep 1986/01 of the U-Wind component.">
+<img src="./u-wind.png"  description="ERA5 data over southern Africa. Map displays the first timestep 1986/01 of the U-Wind component.">
 
 So, moving to the python code, we first have to load all packages and functions we will use. 
 
