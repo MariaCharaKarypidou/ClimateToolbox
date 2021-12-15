@@ -7,7 +7,6 @@ This tiny dot of the internet is my attempt to communicate bits of code with som
 
 [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/MKarypidou.svg?style=social&label=Follow%20%40MKarypidou)](https://twitter.com/MKarypidou)
 
-[![Twitter URL](https://img.shields.io/twitter/url/https://twitter.com/MKarypidou.svg?style=social&label=Follow%20%40MKarypidou)](https://twitter.com/MKarypidou)
 
 <footer>
 <p style="float:left; width: 100%;">
