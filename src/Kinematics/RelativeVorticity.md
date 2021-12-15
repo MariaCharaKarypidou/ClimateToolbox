@@ -8,6 +8,7 @@ In a way, wind is in a continuous dance mode around the globe. Nonetheless, it i
 <img src="./ECMWF_RelVort_250hPa.png">
 
 <img src="./ECMWF_RelVort_850hPa.png">
+
   
 ## Theory
 
@@ -159,11 +160,11 @@ We then extract the longitude (lon) and latitude (lat) variables from our NetCDF
 lon=nc.variables['longitude'][:]
 lat=nc.variables['latitude'][:]
 ```
-As we saw in the Code section, the vorticity function requires some information about the grid spacing of the NetCDF file we use. We provide this information by 
-
-https://unidata.github.io/MetPy/latest/api/generated/metpy.calc.lat_lon_grid_deltas.html
+As we saw in the Code section, the vorticity function requires some information about the grid spacing of the NetCDF file we use. We provide this information through the <a href="https://unidata.github.io/MetPy/latest/api/generated/metpy.calc.lat_lon_grid_deltas.html"> lat_lon_grid_deltas command.  </a>
 ```
 dx, dy = mpcalc.lat_lon_grid_deltas(lon, lat)
+```
+Also, in the attributes of the NetCDF we saw that the file contains 240 timesteps (monthly values from 1986-2005). Therefore, we can perform our calculations 240 times or more wisely, apply a loop. 
 ```
 #
 u = []
@@ -179,10 +180,12 @@ for i in range(240):
     #
     print(i)
 #
-np.shape(vort)
-#
-#
 ```
+Checking the dimensions of our "vort" object, we see that it has 240 timesteps, 129 longitude and 140 latitude values. 
+```
+np.shape(vort)
+```
+
     
 <footer>
 <p style="float:left; width: 100%;">
