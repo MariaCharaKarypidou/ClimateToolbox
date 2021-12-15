@@ -68,7 +68,7 @@ The partial derivatives are then subtracted using the formula: <img src="https:/
 
 ## Hands-on
 
-For this exercise we use the ERA5 reanalysis dataset, downloaded from the <a href="https://cds.climate.copernicus.eu/#!/home"> Copernicus Climate Data Store.  </a> For the calculation of relative vorticity we will need the U and V wind components. The region of interest is southern Africa and extends between latitudes from -10 to -35 <img src="https://render.githubusercontent.com/render/math?math=\LARGE \circ ">S and between longitudes from 10 to 42 <img src="https://render.githubusercontent.com/render/math?math=\LARGE \circ ">E.
+For this exercise we use the ERA5 reanalysis dataset, downloaded from the <a href="https://cds.climate.copernicus.eu/#!/home"> Copernicus Climate Data Store.  </a> For the calculation of relative vorticity we will need the U and V wind components. The region of interest is southern Africa and extends between latitudes from -10 to -35 oS and between longitudes from 10 to 42 oE.
 Using the following command in a linux environment, we can see some attributes of the file we use and what preprocessing has taken place.
 
 ```
