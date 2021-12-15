@@ -271,36 +271,33 @@ import cartopy.feature as cfeature
 <pre><code>lon=nc.variables['longitude'][:]
 lat=nc.variables['latitude'][:]
 </code></pre>
-<p>As we saw in the Code section, the vorticity function requires some information about the grid spacing of the NetCDF file we use. We provide this information by </p>
-<p>https://unidata.github.io/MetPy/latest/api/generated/metpy.calc.lat_lon_grid_deltas.html</p>
+<p>As we saw in the Code section, the vorticity function requires some information about the grid spacing of the NetCDF file we use. We provide this information through the <a href="https://unidata.github.io/MetPy/latest/api/generated/metpy.calc.lat_lon_grid_deltas.html"> lat_lon_grid_deltas command.  </a></p>
 <pre><code>dx, dy = mpcalc.lat_lon_grid_deltas(lon, lat)
 </code></pre>
-<h1 id=""><a class="header" href="#"></a></h1>
-<p>u = []
+<p>Also, in the attributes of the NetCDF we saw that the file contains 240 timesteps (monthly values from 1986-2005). Therefore, we can perform our calculations 240 times or more wisely, apply a loop. </p>
+<pre><code>#
+u = []
 v = []
-vort = []</p>
-<h1 id="-1"><a class="header" href="#-1"></a></h1>
-<p>for i in range(240):
-v.append(np.array(nc.variables['v'][i,:,:]))<br />
-u.append(np.array(nc.variables['u'][i,:,:]))
-v[i] = units.Quantity(v[i], 'm/s')
-u[i] = units.Quantity(u[i], 'm/s')
-vort.append(np.array(mpcalc.vorticity(u[i], v[i], dx=dx, dy=dy)))
+vort = []
 #
-print(i)</p>
-<h1 id="-2"><a class="header" href="#-2"></a></h1>
-<p>np.shape(vort)</p>
-<h1 id="-3"><a class="header" href="#-3"></a></h1>
-<h1 id="-4"><a class="header" href="#-4"></a></h1>
-<pre><code>    
-&lt;footer&gt;
-&lt;p style=&quot;float:left; width: 100%;&quot;&gt;
-Copyright © Maria Chara Karypidou, 2021
-&lt;/p&gt;
-&lt;/footer&gt;
-
-
+for i in range(240):
+    v.append(np.array(nc.variables['v'][i,:,:]))                    
+    u.append(np.array(nc.variables['u'][i,:,:]))
+    v[i] = units.Quantity(v[i], 'm/s')
+    u[i] = units.Quantity(u[i], 'm/s')
+    vort.append(np.array(mpcalc.vorticity(u[i], v[i], dx=dx, dy=dy)))
+    #
+    print(i)
+#
 </code></pre>
+<p>Checking the dimensions of our &quot;vort&quot; object, we see that it has 240 timesteps, 129 longitude and 140 latitude values. </p>
+<pre><code>np.shape(vort)
+</code></pre>
+<footer>
+<p style="float:left; width: 100%;">
+Copyright © Maria Chara Karypidou, 2021
+</p>
+</footer>
 
                     </main>
 
