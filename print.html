@@ -315,8 +315,6 @@ for i in range(240):
 <p>And now comes the plotting time!</p>
 <pre><code>min_val = np.min(vort)
 max_val = np.max(vort)
-diff = max_val-min_val
-step = diff/14
 #
 dataproj = ccrs.PlateCarree()
 #
@@ -327,15 +325,14 @@ ax.coastlines(resolution=&quot;110m&quot;,linewidth=1)
 ax.gridlines(linestyle='--',color='black')
 #
 # Set contour levels, then draw the plot and a colorbar
-#clevs = np.arange(min_val,max_val,step)
-clevs = np.arange(-0.00015,0.00015,0.00001)
+clevs = np.arange(-0.0001,0.0001,0.000011)
 plt.contourf(lon, lat, vort[0], clevs, transform=ccrs.PlateCarree(), cmap=get_cmap(&quot;bwr&quot;), extend=&quot;both&quot;)
 #
-cb = plt.colorbar(ax=ax, orientation=&quot;vertical&quot;, pad=0.02, aspect=16, shrink=0.8)
-cb.set_label(size=9, rotation=270, labelpad=15, label='[$x10^{-5}$ s$^{-1}$]')
-cb.ax.tick_params(labelsize=10)
+cb = plt.colorbar(ax=ax, orientation=&quot;vertical&quot;, pad=0.002, aspect=16, shrink=0.8)
+cb.set_label(size=6, rotation=270, labelpad=15, label='[s$^{-1}$]')
+cb.ax.tick_params(labelsize=4)
 #
-fig.savefig('ERA5_vort_tutorial_1-1-1986.png', format='png', dpi=400)
+fig.savefig('ERA5_vort_tutorial_1-1-1986.png', format='png', dpi=300)
 #
 </code></pre>
 <footer>
