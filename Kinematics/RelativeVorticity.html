@@ -145,8 +145,8 @@
                         <h1 id="relative-vorticity"><a class="header" href="#relative-vorticity">Relative Vorticity</a></h1>
 <p>In a way, wind is in a continuous dance mode around the globe. Nonetheless, it is also performing a local dance, spinning around itself, like the greek dance zeibekiko. In dynamic meteorology, this movement of the wind is described by a quantity termed as &quot;relative vorticity&quot;. Briefly, relative vorticity is a measure of the spin that wind has! </p>
 <h2 id="first-thoughts"><a class="header" href="#first-thoughts">First Thoughts</a></h2>
-<img width="800" alt="portfolio_view" src="src/Kinematics/img/ECMWF_RelVort_250hPa.png">
-<img width="800" alt="portfolio_view" src="src/Kinematics/img/ECMWF_RelVort_850hPa.png">
+<img width="800" alt="portfolio_view" src="/src/Kinematics/img/ECMWF_RelVort_250hPa.png">
+<img width="800" alt="portfolio_view" src="/src/Kinematics/img/ECMWF_RelVort_850hPa.png">
 <h2 id="theory"><a class="header" href="#theory">Theory</a></h2>
 <h2 id="code"><a class="header" href="#code">Code</a></h2>
 <p>This tutorial is based on the <a href="https://unidata.github.io/MetPy/latest/index.html#"> MetPy </a> Python library and exploits the <a href="https://unidata.github.io/MetPy/latest/api/generated/metpy.calc.vorticity.html?highlight=vorticity#metpy.calc.vorticity"> vorticity </a> function. <br />
@@ -160,8 +160,7 @@ Before using the <a href="https://unidata.github.io/MetPy/latest/api/generated/m
 <p><img src="https://latex.codecogs.com/svg.latex?%5CLarge&amp;space;x=%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D" alt="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" /> </p>
 <p>![\Large \frac{\partial v}{\partial x} = \frac{\partial u}{\partial y}](https://latex.codecogs.com/svg.latex?\Large&amp;space;\frac{\partial v}{\partial x} = \frac{\partial u}{\partial y}) </p>
 <p><img src="https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D" alt="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" /></p>
-<p><img src="http://www.sciweavers.org/tex2img.php?eq=1%2Bsin%28mc%5E2%29&amp;bc=White&amp;fc=Black&amp;im=jpg&amp;fs=12&amp;ff=arev&amp;edit=" alt="equation" />
-![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)</p>
+<p><img src="http://www.sciweavers.org/tex2img.php?eq=1%2Bsin%28mc%5E2%29&amp;bc=White&amp;fc=Black&amp;im=jpg&amp;fs=12&amp;ff=arev&amp;edit=" alt="equation" /></p>
 <p><img src="https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D" alt="\Large \frac{\partial v}{\partial x} = \frac{\partial u}{\partial y}" /></p>
 <pre><code>dudy = first_derivative(u, delta=dy, axis=y_dim)
 dvdx = first_derivative(v, delta=dx, axis=x_dim)
