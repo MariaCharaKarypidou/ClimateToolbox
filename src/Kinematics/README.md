@@ -1,7 +1,7 @@
 # Dynamics of the Atmosphere
 
-1) [Relative Vorticity](/ClimateToolbox/Kinematics/RelativeVorticity.md)
-2) [Absolute Vorticity](/ClimateToolbox//Kinematics/AbsoluteVorticity.md)
+1) <a href="https://mariacharakarypidou.github.io/ClimateToolbox/Kinematics/RelativeVorticity.html"> Relative Vorticity </a>
+2) <a href="https://mariacharakarypidou.github.io/ClimateToolbox/Kinematics/AbsoluteVorticity.html"> Absolute Vorticity </a>
 
 More coming soon...
 
