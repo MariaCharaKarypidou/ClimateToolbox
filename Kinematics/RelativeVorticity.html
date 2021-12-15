@@ -157,7 +157,11 @@ Before using the <a href="https://unidata.github.io/MetPy/latest/api/generated/m
 
 </code></pre>
 <p>The key information is provided in lines 65-57, where we see that: </p>
+<p><img src="https://latex.codecogs.com/svg.latex?%5CLarge&amp;space;x=%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D" alt="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" /> </p>
 <p>![\Large \frac{\partial v}{\partial x} = \frac{\partial u}{\partial y}](https://latex.codecogs.com/svg.latex?\Large&amp;space;\frac{\partial v}{\partial x} = \frac{\partial u}{\partial y}) </p>
+<pre><code class="language-math">a^2+b^2=c^2
+\frac{\partial v}{\partial x} = \frac{\partial u}{\partial y}
+</code></pre>
 <pre><code>dudy = first_derivative(u, delta=dy, axis=y_dim)
 dvdx = first_derivative(v, delta=dx, axis=x_dim)
 return dvdx - dudy
