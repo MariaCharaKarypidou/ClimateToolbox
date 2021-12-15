@@ -58,7 +58,7 @@ The partial derivatives are then subtracted using the formula: <img src="https:/
 
 ## Hands-on
 
-For this exercise we use the ERA5 reanalysis dataset, downloaded from the <a href="https://cds.climate.copernicus.eu/#!/home"> Copernicus Climate Data Store.  </a> The region of interest is southern Africa and extends between latitudes from -10 to -35 <img src="https://render.githubusercontent.com/render/math?math=\degree"> and between longitudes from 10 to 42. 
+For this exercise we use the ERA5 reanalysis dataset, downloaded from the <a href="https://cds.climate.copernicus.eu/#!/home"> Copernicus Climate Data Store.  </a> The region of interest is southern Africa and extends between latitudes from -10 to -35 <img src="https://render.githubusercontent.com/render/math?math=$^{\circ}$"> and between longitudes from 10 to 42. 
 
 ```
 # Not all packages and functions are necessary for this excercise, however, if you have those installed in your environment already, then you are ready to do pretty much everything in python (import data, analyze, plot etc.)
