@@ -28,12 +28,6 @@ The key information is provided in lines 65-57, where we see that:
 
 ![\Large \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y}](https://latex.codecogs.com/svg.latex?\Large&space;\frac{\partial v}{\partial x} - \frac{\partial u}{\partial y})
 
-![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}) 
-
-![\Large \frac{\partial v}{\partial x} = \frac{\partial u}{\partial y}](https://latex.codecogs.com/svg.latex?\Large&space;\frac{\partial v}{\partial x} = \frac{\partial u}{\partial y}) 
-
-
-![formula](https://render.githubusercontent.com/render/math?math=\frac{\partial v}{\partial x} - \frac{\partial u}{\partial y})
 
 
 ```
