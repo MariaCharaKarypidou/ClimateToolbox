@@ -23,7 +23,7 @@ Relative vorticity is an invaluable variable for meteorologists and climatologis
 
 Theory is taken from the book <a href="https://www.amazon.com/Introduction-Dynamic-Meteorology-International-Geophysics/dp/0123848660"> "An Introduction to Dynamic Meteorology" </a> by James R. Holton and Gregory J. Hakim.\
 
-According to them, "Vorticity, the microscopic measure of rotation in a fluid, is a vector field defined as the curl of velocity. The relative vorticity <img src="https://render.githubusercontent.com/render/math?math=\large \omega"> is the curl of the relative velocity:
+According to them, "Vorticity, the microscopic measure of rotation in a fluid, is a vector field defined as the curl of velocity. The relative vorticity <img src="https://render.githubusercontent.com/render/math?math=\large \omega"> is the curl of the relative velocity":
 
 <img src="https://render.githubusercontent.com/render/math?math=\LARGE \omega \equiv \nabla\times \U">
 
@@ -68,7 +68,7 @@ The partial derivatives are then subtracted using the formula: <img src="https:/
 
 ## Hands-on
 
-For this exercise we use the ERA5 reanalysis dataset, downloaded from the <a href="https://cds.climate.copernicus.eu/#!/home"> Copernicus Climate Data Store.  </a> For the calculation of relative vorticity we will need the U and V wind components. The region of interest is southern Africa and extends between latitudes from -10 to -35 oS and between longitudes from 10 to 42 oE.
+For this exercise we use the <a href="https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.3803"> ERA5 </a> function reanalysis dataset, downloaded from the <a href="https://cds.climate.copernicus.eu/#!/home"> Copernicus Climate Data Store.  </a> For the calculation of relative vorticity we will need the U and V wind components. The region of interest is southern Africa and extends between latitudes from -10 to -35 oS and between longitudes from 10 to 42 oE.
 Using the following command in a linux environment, we can see some attributes of the file we use and what preprocessing has taken place.
 
 ```
