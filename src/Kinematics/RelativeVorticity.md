@@ -120,6 +120,8 @@ variables:
 ```
 The file contains mean monthly data from 1986-2005 of U and V wind components at 800hPa.  
 
+<img src="./u-wind.png">
+
 ```
 # Not all packages and functions are necessary for this excercise, however, if you have those installed in your environment already, then you are ready to do pretty much everything in python (import data, analyze, plot etc.)
 #
