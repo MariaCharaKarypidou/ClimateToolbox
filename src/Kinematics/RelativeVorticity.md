@@ -185,8 +185,40 @@ Checking the dimensions of our "vort" object, we see that it has 240 timesteps, 
 ```
 np.shape(vort)
 ```
+And now comes the plotting time!
 
-    
+```
+min_val = vort.min()
+#max_val = vort.max()
+#min_val = -0.00001
+max_val = -0.00004
+#min_val = -0.00004
+diff = max_val-min_val
+#diff = np.abs(diff)
+step = diff/14
+#
+dataproj = ccrs.PlateCarree()
+#
+# Set the figure size, projection, and extent
+fig = plt.figure(figsize=(2.7,2.8))
+ax = plt.axes(projection=ccrs.Robinson())
+#ax.set_global()
+ax.coastlines(resolution="110m",linewidth=1)
+ax.gridlines(linestyle='--',color='black')
+#
+# Set contour levels, then draw the plot and a colorbar
+clevs = np.arange(min_val,max_val,step)
+#clevs = np.arange(-6.895274555933569e-05,4.4097118778989006e-05,8.074990309880337e-06)
+plt.contourf(lon, lat, vort, clevs, transform=ccrs.PlateCarree(), cmap=plt.cm.jet)
+#
+cb = plt.colorbar(ax=ax, orientation="vertical", pad=0.02, aspect=16, shrink=0.8)
+cb.set_label(size=9, rotation=270, labelpad=15, label='[$x10^{-5}$ s$^{-1}$]')
+cb.ax.tick_params(labelsize=10)
+#
+fig.savefig('ERA5_vort_JAN.png', format='png', dpi=400)
+#
+```
+
 <footer>
 <p style="float:left; width: 100%;">
 Copyright © Maria Chara Karypidou, 2021
