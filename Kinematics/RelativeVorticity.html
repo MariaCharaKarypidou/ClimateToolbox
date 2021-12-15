@@ -158,7 +158,7 @@
 </p>
 <h2 id="theory"><a class="header" href="#theory">Theory</a></h2>
 <p>Theory is taken from the book <a href="https://www.amazon.com/Introduction-Dynamic-Meteorology-International-Geophysics/dp/0123848660"> &quot;An Introduction to Dynamic Meteorology&quot; </a> by James R. Holton and Gregory J. Hakim.</p>
-<p>According to them, &quot;Vorticity, the microscopic measure of rotation in a fluid, is a vector field defined as the curl of velocity. The relative vorticity <img src="https://render.githubusercontent.com/render/math?math=\large \omega"> is the curl of the relative velocity:</p>
+<p>According to them, &quot;Vorticity, the microscopic measure of rotation in a fluid, is a vector field defined as the curl of velocity. The relative vorticity <img src="https://render.githubusercontent.com/render/math?math=\large \omega"> is the curl of the relative velocity&quot;:</p>
 <img src="https://render.githubusercontent.com/render/math?math=\LARGE \omega \equiv \nabla\times \U">
 <p>which, in Cartesian coordinates, is analyzed to the following:</p>
 <img src="https://render.githubusercontent.com/render/math?math=\LARGE \omega = (\frac{\partial w}{\partial y} - \frac{\partial v}{\partial z}, \frac{\partial u}{\partial z} - \frac{\partial w}{\partial x}, \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y})">
@@ -190,7 +190,7 @@ return dvdx - dudy
 </ol>
 <p>The partial derivatives are then subtracted using the formula: <img src="https://render.githubusercontent.com/render/math?math=\LARGE \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y}"> </p>
 <h2 id="hands-on"><a class="header" href="#hands-on">Hands-on</a></h2>
-<p>For this exercise we use the ERA5 reanalysis dataset, downloaded from the <a href="https://cds.climate.copernicus.eu/#!/home"> Copernicus Climate Data Store.  </a> For the calculation of relative vorticity we will need the U and V wind components. The region of interest is southern Africa and extends between latitudes from -10 to -35 oS and between longitudes from 10 to 42 oE.
+<p>For this exercise we use the <a href="https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.3803"> ERA5 </a> function reanalysis dataset, downloaded from the <a href="https://cds.climate.copernicus.eu/#!/home"> Copernicus Climate Data Store.  </a> For the calculation of relative vorticity we will need the U and V wind components. The region of interest is southern Africa and extends between latitudes from -10 to -35 oS and between longitudes from 10 to 42 oE.
 Using the following command in a linux environment, we can see some attributes of the file we use and what preprocessing has taken place.</p>
 <pre><code>ncdump -h ERA5_daymean_monmean_merge_800.nc
 </code></pre>
