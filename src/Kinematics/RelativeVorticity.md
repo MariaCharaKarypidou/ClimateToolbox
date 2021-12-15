@@ -37,9 +37,7 @@ The key information is provided in lines 65-57. As we see, finite differences ar
 
 3. The central difference: <img src="https://render.githubusercontent.com/render/math?math=\LARGE \frac{f(a \dotplus h)-f(a-h)}{2h}">. 
 
-
-
-where we see that: <img src="https://render.githubusercontent.com/render/math?math=\LARGE \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y}">. 
+The partial derivatives are then subtracted using the formula: <img src="https://render.githubusercontent.com/render/math?math=\LARGE \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y}">. 
 
 
 
