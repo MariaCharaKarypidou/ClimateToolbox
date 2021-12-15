@@ -19,7 +19,9 @@ According to them, "Vorticity, the microscopic measure of rotation in a fluid, i
 
 which in Cartesian coordinates is analyzed to the following:\
 
-<img src="https://render.githubusercontent.com/render/math?math=\LARGE \omega_\alpha \equiv \nabla\times \U_\alpha">, <img src="https://render.githubusercontent.com/render/math?math=\LARGE \omega \equiv \nabla\times \U">
+<img src="https://render.githubusercontent.com/render/math?math=\LARGE \omega = (\frac{\partial w}{\partial y} - \frac{\partial v}{\partial z}, \frac{\partial u}{\partial z} - \frac{\partial w}{\partial x}, \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y})">
+
+
 
 The partial derivatives are then subtracted using the formula: <img src="https://render.githubusercontent.com/render/math?math=\LARGE \zeta = \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y}">. 
 
