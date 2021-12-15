@@ -11,7 +11,7 @@ In a way, wind is in a continuous dance mode around the globe. Nonetheless, it i
   
 ## Theory
 
-Theory is taken from the book "<a href="https://www.amazon.com/Introduction-Dynamic-Meteorology-International-Geophysics/dp/0123848660"> An Introduction to Dynamic Meteorology" </a> by James R. Holton and Gregory J. Hakim.
+Theory is taken from the book "<a href="https://www.amazon.com/Introduction-Dynamic-Meteorology-International-Geophysics/dp/0123848660"> "An Introduction to Dynamic Meteorology" </a> by James R. Holton and Gregory J. Hakim.
 
 The partial derivatives are then subtracted using the formula: <img src="https://render.githubusercontent.com/render/math?math=\LARGE \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y}">. 
 
