@@ -47,13 +47,13 @@ return dvdx - dudy
 
 The key information is provided in lines 65-57. As we see, finite differences are calculated using the <a href="https://github.com/Unidata/MetPy/blob/9b01cbef28927a8fc70984807166b6f151f6990d/src/metpy/calc/tools.py#L952"> first_derivative </a> function. The <a href="https://github.com/Unidata/MetPy/blob/9b01cbef28927a8fc70984807166b6f151f6990d/src/metpy/calc/tools.py#L952"> first_derivative </a> function uses forward and backward differencing at the edges of the domain and central differences at every other part of the domain. We are reminded that in first order finite differencing, the following formulas are applied:
 
-1. The one-sided (forward) difference: <img src="https://render.githubusercontent.com/render/math?math=\LARGE \frac{f(a \dotplus h)-f(a)}{h}">. 
+1. The one-sided (forward) difference: <img src="https://render.githubusercontent.com/render/math?math=\LARGE \frac{f(a \dotplus h)-f(a)}{h}"> 
 
-2. The one-sided (backward) difference: <img src="https://render.githubusercontent.com/render/math?math=\LARGE \frac{f(a)-f(a-h)}{h}">. 
+2. The one-sided (backward) difference: <img src="https://render.githubusercontent.com/render/math?math=\LARGE \frac{f(a)-f(a-h)}{h}"> 
 
-3. The central difference: <img src="https://render.githubusercontent.com/render/math?math=\LARGE \frac{f(a \dotplus h)-f(a-h)}{2h}">. 
+3. The central difference: <img src="https://render.githubusercontent.com/render/math?math=\LARGE \frac{f(a \dotplus h)-f(a-h)}{2h}"> 
 
-The partial derivatives are then subtracted using the formula: <img src="https://render.githubusercontent.com/render/math?math=\LARGE \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y}">. 
+The partial derivatives are then subtracted using the formula: <img src="https://render.githubusercontent.com/render/math?math=\LARGE \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y}"> 
 
 
 ## Hands-on
