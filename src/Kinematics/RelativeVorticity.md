@@ -15,7 +15,7 @@ Theory is taken from the book <a href="https://www.amazon.com/Introduction-Dynam
 
 According to them, "Vorticity, the microscopic measure of rotation in a fluid, is a vector field defined as the curl of velocity. The absolute vorticity <img src="https://render.githubusercontent.com/render/math?math=\large \omega_\alpha"> is the curl of the absolute velocity, whereas the relative vorticity <img src="https://render.githubusercontent.com/render/math?math=\large \omega"> is the curl of the relative velocity:
 
-<img src="https://render.githubusercontent.com/render/math?math=\LARGE \omega_\alpha \equiv \nabla\times \U_\alpha">, <img src="https://render.githubusercontent.com/render/math?math=\LARGE \omega \equiv \nabla\times \U">
+<img src="https://render.githubusercontent.com/render/math?math=\LARGE \omega_\alpha \equiv \nabla\times \U_\alpha">
 
 which in Cartesian coordinates is analyzed to the following:
 
@@ -23,7 +23,7 @@ which in Cartesian coordinates is analyzed to the following:
 
 After performing scale analysis on the above equation, it appears that the horizontal components are negligible, and therefore only the vertical component is used, leading to the following equation for relative vorticity:
 
-<img src="https://render.githubusercontent.com/render/math?math=\LARGE \zeta = \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y}">. 
+<img src="https://render.githubusercontent.com/render/math?math=\LARGE \zeta = \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y}"> 
 
 
 
@@ -56,8 +56,11 @@ The key information is provided in lines 65-57. As we see, finite differences ar
 The partial derivatives are then subtracted using the formula: <img src="https://render.githubusercontent.com/render/math?math=\LARGE \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y}">. 
 
 
+## Hands-on
 
 ```
+# Not all packages and functions are necessary for this excercise, however, if you have those installed in your environment already, then you are ready to do pretty much everything in python (import data, analyze, plot etc.)
+#
 from matplotlib import pyplot
 from matplotlib.cm import get_cmap
 from __future__ import print_function
