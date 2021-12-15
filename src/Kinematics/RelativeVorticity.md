@@ -210,6 +210,11 @@ cb.ax.tick_params(labelsize=4)
 fig.savefig('ERA5_vort_tutorial_1-1-1986.png', format='png', dpi=300)
 #
 ```
+The resulting map is displayed below. All negative values indicate cyclonic relative vorticity (remember that we are in the southern hemisphere) and all positive values display anticyclonic relative vorticity.
+
+<img src="./ERA5_VORT.png">
+
+
 
 <footer>
 <p style="float:left; width: 100%;">
