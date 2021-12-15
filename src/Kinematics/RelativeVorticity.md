@@ -58,7 +58,66 @@ The partial derivatives are then subtracted using the formula: <img src="https:/
 
 ## Hands-on
 
-For this exercise we use the ERA5 reanalysis dataset, downloaded from the <a href="https://cds.climate.copernicus.eu/#!/home"> Copernicus Climate Data Store.  </a> The region of interest is southern Africa and extends between latitudes from -10 to -35 <img src="https://render.githubusercontent.com/render/math?math=\LARGE $^{\circ}$">S and between longitudes from 10 to 42 <img src="https://render.githubusercontent.com/render/math?math=\LARGE $^{\circ}$">E. 
+For this exercise we use the ERA5 reanalysis dataset, downloaded from the <a href="https://cds.climate.copernicus.eu/#!/home"> Copernicus Climate Data Store.  </a> For the calculation of relative vorticity we will need the U and V wind components. The region of interest is southern Africa and extends between latitudes from -10 to -35 <img src="https://render.githubusercontent.com/render/math?math=\LARGE $^{\circ}$S"> and between longitudes from 10 to 42 <img src="https://render.githubusercontent.com/render/math?math=\LARGE $^{\circ}$E">.
+Using the following command in a linux environment, we can see some attributes of the file we use and what preprocessing has taken place.
+
+```
+ncdump -h ERA5_daymean_monmean_merge_800.nc
+```
+We see the following:
+
+```
+dimensions:
+        time = UNLIMITED ; // (240 currently)
+        bnds = 2 ;
+        longitude = 129 ;
+        latitude = 101 ;
+variables:
+        double time(time) ;
+                time:standard_name = "time" ;
+                time:long_name = "time" ;
+                time:bounds = "time_bnds" ;
+                time:units = "hours since 1900-01-01 00:00:00.0" ;
+                time:calendar = "gregorian" ;
+                time:axis = "T" ;
+        double time_bnds(time, bnds) ;
+        float longitude(longitude) ;
+                longitude:standard_name = "longitude" ;
+                longitude:long_name = "longitude" ;
+                longitude:units = "degrees_east" ;
+                longitude:axis = "X" ;
+        float latitude(latitude) ;
+                latitude:standard_name = "latitude" ;
+                latitude:long_name = "latitude" ;
+                latitude:units = "degrees_north" ;
+                latitude:axis = "Y" ;
+        double u(time, latitude, longitude) ;
+                u:standard_name = "eastward_wind" ;
+                u:long_name = "U component of wind" ;
+                u:units = "m s**-1" ;
+                u:_FillValue = -32767. ;
+                u:missing_value = -32767. ;
+        double v(time, latitude, longitude) ;
+                v:standard_name = "northward_wind" ;
+                v:long_name = "V component of wind" ;
+                v:units = "m s**-1" ;
+                v:_FillValue = -32767. ;
+                v:missing_value = -32767. ;
+
+// global attributes:
+                :CDI = "Climate Data Interface version 1.9.7.1 (http://mpimet.mpg.de/cdi)" ;
+                :Conventions = "CF-1.6" ;
+                :history = "Thu Nov 04 17:29:33 2021: cdo merge ERA5_u800_1986_2005_regionA_daymean_monmean.nc ERA5_v800_1986_2005_regionA_daymean_monmean.nc ERA5_daymean_monmean_merge_800.nc\n",
+                        "Thu Nov 04 17:17:03 2021: cdo monmean ERA5_u800_1986_2005_regionA_daymean.nc ERA5_u800_1986_2005_regionA_daymean_monmean.nc\n",
+                        "Thu Nov 04 17:13:32 2021: cdo daymean ERA5_u800_1986_2005_regionA.nc ERA5_u800_1986_2005_regionA_daymean.nc\n",
+                        "Sun Oct 31 16:42:02 2021: cdo sellonlatbox,10,42,-35,-10 ERA5_u800_1986_2005.nc ERA5_u800_1986_2005_regionA.nc\n",
+                        "Sun Oct 31 16:12:56 2021: cdo -b F64 -f nc2 mergetime ERA5_u800_1986_1998.nc ERA5_u800_1999_2005.nc ERA5_u800_1986_2005.nc\n",
+                        "2021-10-31 03:41:27 GMT by grib_to_netcdf-2.23.0: /opt/ecmwf/mars-client/bin/grib_to_netcdf -S param -o /cache/data9/adaptor.mars.internal-1635647195.7786794-18405-5-3a45d373-0572-4b14-8ed9-085c098ef857.nc /cache/tmp/3a45d373-0572-4b14-8ed9-085c098ef857-adaptor.mars.internal-1635638913.5616663-18405-6-tmp.grib" ;
+                :frequency = "mon" ;
+                :CDO = "Climate Data Operators version 1.9.7.1 (http://mpimet.mpg.de/cdo)" ;
+}
+
+```
 
 ```
 # Not all packages and functions are necessary for this excercise, however, if you have those installed in your environment already, then you are ready to do pretty much everything in python (import data, analyze, plot etc.)
