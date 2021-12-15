@@ -203,7 +203,7 @@ ax.gridlines(linestyle='--',color='black')
 #
 # Set contour levels, then draw the plot and a colorbar
 #clevs = np.arange(min_val,max_val,step)
-clevs = np.arange(-0.0001,0.0001,0.00001)
+clevs = np.arange(-0.00015,0.00015,0.00001)
 plt.contourf(lon, lat, vort[0], clevs, transform=ccrs.PlateCarree(), cmap=get_cmap("bwr"), extend="both")
 #
 cb = plt.colorbar(ax=ax, orientation="vertical", pad=0.02, aspect=16, shrink=0.8)
