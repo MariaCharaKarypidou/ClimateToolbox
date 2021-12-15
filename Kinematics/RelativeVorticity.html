@@ -149,7 +149,8 @@
 <img src="./ECMWF_RelVort_850hPa.png">
 <h2 id="theory"><a class="header" href="#theory">Theory</a></h2>
 <p>Theory is taken from the book &quot;<a href="https://www.amazon.com/Introduction-Dynamic-Meteorology-International-Geophysics/dp/0123848660"> &quot;An Introduction to Dynamic Meteorology&quot; </a> by James R. Holton and Gregory J. Hakim.</p>
-<p>According to them, &quot;Vorticity, the microscopic measure of rotation in a fluid, is a vector field defined as the curl of velocity. The absolute vorticity <img src="https://render.githubusercontent.com/render/math?math=\LARGE \omega_\alpha"> is the curl of the absolute velocity, whereas the relative vorticity ! is the curl of the relative velocity:</p>
+<p>According to them, &quot;Vorticity, the microscopic measure of rotation in a fluid, is a vector field defined as the curl of velocity. The absolute vorticity <img src="https://render.githubusercontent.com/render/math?math=\large \omega_\alpha"> is the curl of the absolute velocity, whereas the relative vorticity <img src="https://render.githubusercontent.com/render/math?math=\large \omega"> is the curl of the relative velocity:</p>
+<p>The partial derivatives are then subtracted using the formula: <img src="https://render.githubusercontent.com/render/math?math=\LARGE \omega_\alpha \equiv \nabla\times \U_\alpha">. </p>
 <p>The partial derivatives are then subtracted using the formula: <img src="https://render.githubusercontent.com/render/math?math=\LARGE \zeta = \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y}">. </p>
 <h2 id="code"><a class="header" href="#code">Code</a></h2>
 <p>This tutorial is based on the <a href="https://unidata.github.io/MetPy/latest/index.html#"> MetPy </a> Python library and exploits the <a href="https://unidata.github.io/MetPy/latest/api/generated/metpy.calc.vorticity.html?highlight=vorticity#metpy.calc.vorticity"> vorticity </a> function. <br />
