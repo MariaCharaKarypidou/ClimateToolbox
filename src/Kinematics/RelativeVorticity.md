@@ -5,9 +5,9 @@ In a way, wind is in a continuous dance mode around the globe. Nonetheless, it i
 ## First Thoughts
 
 
-<img width="800" alt="portfolio_view" src="/src/Kinematics/img/ECMWF_RelVort_250hPa.png">
+<img width="800" alt="portfolio_view" src="src/Kinematics/img/ECMWF_RelVort_250hPa.png">
 
-<img width="800" alt="portfolio_view" src="/src/Kinematics/img/ECMWF_RelVort_850hPa.png">
+<img width="800" alt="portfolio_view" src="src/Kinematics/img/ECMWF_RelVort_850hPa.png">
   
 ## Theory
 
@@ -33,6 +33,7 @@ The key information is provided in lines 65-57, where we see that:
 
 
 ![equation](http://www.sciweavers.org/tex2img.php?eq=1%2Bsin%28mc%5E2%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
+![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
 
 ![\Large \frac{\partial v}{\partial x} = \frac{\partial u}{\partial y}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
 
