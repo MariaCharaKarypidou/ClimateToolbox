@@ -1,7 +1,7 @@
 # Dynamics of the Atmosphere
 
- - [Relative Vorticity](Kinematics/RelativeVorticity.md)
- - [Absolute Vorticity](Kinematics/AbsoluteVorticity.md)
+ - [Relative Vorticity](/src/Kinematics/RelativeVorticity.md)
+ - [Absolute Vorticity](/src/Kinematics/AbsoluteVorticity.md)
 
 More coming soon...
 
