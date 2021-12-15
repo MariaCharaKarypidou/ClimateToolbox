@@ -4,18 +4,18 @@ In a way, wind is in a continuous dance mode around the globe. Nonetheless, it i
 
 ## First Thoughts
 
-Relative vorticity is an invaluable variable for meteorologists and climatologists. 
+Relative vorticity is an invaluable variable for meteorologists and climatologists. It can be very "noisy" at the lower troposphere (850 hPa), but it can provide very indicative information about atmospheric disturbances at the middle or higher troposphere (250 hPa).
 
 <p align="center">
   <img src="./ECMWF_RelVort_250hPa.png" width="600">
   <br>
-    <em>Relative vorticity at 250 hPa from the ECMWF forecasting system for 6 December 2021 at 12.00 UTC over southern Africa </em>
+    <em>Relative vorticity at 250 hPa from the ECMWF forecasting system for 6 December 2021 at 12.00 UTC over southern Africa.</em>
 </p>
 
 <p align="center">
   <img src="./ECMWF_RelVort_850hPa.png" width="600">
   <br>
-    <em>Relative vorticity at 850 hPa from the ECMWF forecasting system for 6 December 2021 at 12.00 UTC over southern Africa </em>
+    <em>Relative vorticity at 850 hPa from the ECMWF forecasting system for 6 December 2021 at 12.00 UTC over southern Africa.</em>
 </p>
 
   
@@ -130,7 +130,11 @@ variables:
 ```
 The file contains mean monthly data from 1986-2005 of U and V wind components at 800hPa (240 timesteps in total).  
 
-<img src="./u-wind.png"  description="ERA5 data over southern Africa. Map displays the first timestep 1986/01 of the U-Wind component.">
+<p align="center">
+  <img src="./u-wind.png" width="400">
+  <br>
+    <em>ERA5 data over southern Africa. Map displays the first timestep 1986/01 of the U-Wind component.</em>
+</p>
 
 So, moving to the python code, we first have to load all packages and functions we will use. 
 
@@ -221,9 +225,12 @@ fig.savefig('ERA5_vort_tutorial_1-1-1986.png', format='png', dpi=300)
 ```
 The resulting map is displayed below. All negative values indicate cyclonic relative vorticity (remember that we are in the southern hemisphere) and all positive values display anticyclonic relative vorticity.
 
-<img src="./ERA5_VORT.png">
 
-
+<p align="center">
+  <img src="./ERA5_VORT.png"" width="400">
+  <br>
+    <em>Relative vorticity at 800 hPa for 1986/01 constructed using U and V wind components from ERA5 reanalysis data over southern Africa.</em>
+</p>
 
 <footer>
 <p style="float:left; width: 100%;">
