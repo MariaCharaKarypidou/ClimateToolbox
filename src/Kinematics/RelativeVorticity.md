@@ -118,13 +118,14 @@ variables:
 }
 
 ```
-The file contains mean monthly data from 1986-2005 of U and V wind components at 800hPa.  
+The file contains mean monthly data from 1986-2005 of U and V wind components at 800hPa.   
 
 <img src="./u-wind.png">
 
+So, moving to the python code, we first have to load all packages and functions we will use. 
+
 ```
-# Not all packages and functions are necessary for this excercise, however, if you have those installed in your environment already, then you are ready to do pretty much everything in python (import data, analyze, plot etc.)
-#
+# 
 from matplotlib import pyplot
 from matplotlib.cm import get_cmap
 from __future__ import print_function
@@ -144,8 +145,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 import cartopy.feature as cfeature
 #
+```
+We continue by setting our path:
+```
 root_dir = '/users/pr007/mkaryp/vorticity/'
+```
+And load in our NetCDF file:
+```
 nc = Dataset(root_dir+'ERA5_daymean_monmean_merge_850.nc')
+```
 #
 lon=nc.variables['longitude'][:]
 lat=nc.variables['latitude'][:]
