@@ -25,7 +25,7 @@ Theory is taken from the book <a href="https://www.amazon.com/Introduction-Dynam
 
 According to them, "Vorticity, the microscopic measure of rotation in a fluid, is a vector field defined as the curl of velocity. The relative vorticity <img src="https://render.githubusercontent.com/render/math?math=\large \omega"> is the curl of the relative velocity:
 
-<img src="https://render.githubusercontent.com/render/math?math=\LARGE \omega_\alpha \equiv \nabla\times \U_\alpha">
+<img src="https://render.githubusercontent.com/render/math?math=\LARGE \omega \equiv \nabla\times \U">
 
 which, in Cartesian coordinates, is analyzed to the following:
 
