@@ -119,9 +119,9 @@ variables:
 }
 
 ```
-The file contains mean monthly data from 1986-2005 of U and V wind components at 800hPa.   
+The file contains mean monthly data from 1986-2005 of U and V wind components at 800hPa (240 timesteps in total).  
 
-<img src="./u-wind.png">
+<img src="./u-wind.png"  alt="hi">
 
 So, moving to the python code, we first have to load all packages and functions we will use. 
 
@@ -181,7 +181,7 @@ for i in range(240):
     print(i)
 #
 ```
-Checking the dimensions of our "vort" object, we see that it has 240 timesteps, 129 longitude and 140 latitude values. 
+Checking the dimensions of our "vort" object, we see that it has 240 timesteps, 129 longitude and 101 latitude values. 
 ```
 np.shape(vort)
 ```
