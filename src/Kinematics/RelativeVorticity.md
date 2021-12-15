@@ -148,17 +148,23 @@ import cartopy.feature as cfeature
 ```
 We continue by setting our path:
 ```
-root_dir = '/users/pr007/mkaryp/vorticity/'
+root_dir = '/my/.../path/.../'
 ```
 And load in our NetCDF file:
 ```
 nc = Dataset(root_dir+'ERA5_daymean_monmean_merge_850.nc')
 ```
-#
+We then extract the longitude (lon) and latitude (lat) variables from our NetCDF file for later use.
+```
 lon=nc.variables['longitude'][:]
 lat=nc.variables['latitude'][:]
-#
+```
+As we saw in the Code section, the vorticity function requires some information about the grid spacing of the NetCDF file we use. We provide this information by 
+
+https://unidata.github.io/MetPy/latest/api/generated/metpy.calc.lat_lon_grid_deltas.html
+```
 dx, dy = mpcalc.lat_lon_grid_deltas(lon, lat)
+```
 #
 u = []
 v = []
