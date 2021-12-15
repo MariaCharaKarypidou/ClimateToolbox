@@ -5,7 +5,7 @@ In a way, wind is in a continuous dance mode around the globe. Nonetheless, it i
 ## First Thoughts
  
 
-<img src="/Kinematics/img/ECMWF_RelVort_250hPa.png">
+<img src="Kinematics/img/ECMWF_RelVort_250hPa.png">
 
 <img src="/src/Kinematics/img/ECMWF_RelVort_850hPa.png">
   
