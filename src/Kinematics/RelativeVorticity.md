@@ -191,6 +191,7 @@ And now comes the plotting time!
 min_val = np.min(vort)
 max_val = np.max(vort)
 diff = max_val-min_val
+diff = np.abs(diff)
 step = diff/14
 #
 dataproj = ccrs.PlateCarree()
