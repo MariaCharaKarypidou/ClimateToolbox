@@ -261,8 +261,8 @@ variables:
 }
 
 </code></pre>
-<p>The file contains mean monthly data from 1986-2005 of U and V wind components at 800hPa.</p>
-<img src="Kinematics/./u-wind.png">
+<p>The file contains mean monthly data from 1986-2005 of U and V wind components at 800hPa (240 timesteps in total).</p>
+<img src="Kinematics/./u-wind.png"  alt="hi">
 <p>So, moving to the python code, we first have to load all packages and functions we will use. </p>
 <pre><code># 
 from matplotlib import pyplot
@@ -314,7 +314,7 @@ for i in range(240):
     print(i)
 #
 </code></pre>
-<p>Checking the dimensions of our &quot;vort&quot; object, we see that it has 240 timesteps, 129 longitude and 140 latitude values. </p>
+<p>Checking the dimensions of our &quot;vort&quot; object, we see that it has 240 timesteps, 129 longitude and 101 latitude values. </p>
 <pre><code>np.shape(vort)
 </code></pre>
 <p>And now comes the plotting time!</p>
