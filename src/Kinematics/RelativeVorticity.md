@@ -11,7 +11,7 @@ In a way, wind is in a continuous dance mode around the globe. Nonetheless, it i
   
 ## Theory
 
-Theory is taken from the book "<a href="https://www.amazon.com/Introduction-Dynamic-Meteorology-International-Geophysics/dp/0123848660"> "An Introduction to Dynamic Meteorology" </a> by James R. Holton and Gregory J. Hakim.\
+Theory is taken from the book <a href="https://www.amazon.com/Introduction-Dynamic-Meteorology-International-Geophysics/dp/0123848660"> "An Introduction to Dynamic Meteorology" </a> by James R. Holton and Gregory J. Hakim.\
 
 According to them, "Vorticity, the microscopic measure of rotation in a fluid, is a vector field defined as the curl of velocity. The absolute vorticity <img src="https://render.githubusercontent.com/render/math?math=\large \omega_\alpha"> is the curl of the absolute velocity, whereas the relative vorticity <img src="https://render.githubusercontent.com/render/math?math=\large \omega"> is the curl of the relative velocity:
 
