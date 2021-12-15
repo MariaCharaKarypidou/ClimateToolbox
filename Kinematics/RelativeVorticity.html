@@ -297,6 +297,7 @@ for i in range(240):
 <pre><code>min_val = np.min(vort)
 max_val = np.max(vort)
 diff = max_val-min_val
+diff = np.abs(diff)
 step = diff/14
 #
 dataproj = ccrs.PlateCarree()
