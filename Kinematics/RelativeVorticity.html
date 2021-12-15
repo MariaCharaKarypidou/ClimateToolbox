@@ -145,13 +145,22 @@
                         <h1 id="relative-vorticity"><a class="header" href="#relative-vorticity">Relative Vorticity</a></h1>
 <p>In a way, wind is in a continuous dance mode around the globe. Nonetheless, it is also performing a local dance, spinning around itself. In dynamic meteorology, this movement of the wind is described by a quantity termed as &quot;relative vorticity&quot;. Briefly, relative vorticity is a measure of the spin of an air mass. </p>
 <h2 id="first-thoughts"><a class="header" href="#first-thoughts">First Thoughts</a></h2>
-<img src="./ECMWF_RelVort_250hPa.png">
-<img src="./ECMWF_RelVort_850hPa.png">
+<p>Relative vorticity is an invaluable variable for meteorologists and climatologists. </p>
+<p align="center">
+  <img src="./ECMWF_RelVort_250hPa.png" width="600">
+  <br>
+    <em>Relative vorticity at 250 hPa from the ECMWF forecasting system for 6 December 2021 at 12.00 UTC over southern Africa </em>
+</p>
+<p align="center">
+  <img src="./ECMWF_RelVort_850hPa.png" width="600">
+  <br>
+    <em>Relative vorticity at 850 hPa from the ECMWF forecasting system for 6 December 2021 at 12.00 UTC over southern Africa </em>
+</p>
 <h2 id="theory"><a class="header" href="#theory">Theory</a></h2>
 <p>Theory is taken from the book <a href="https://www.amazon.com/Introduction-Dynamic-Meteorology-International-Geophysics/dp/0123848660"> &quot;An Introduction to Dynamic Meteorology&quot; </a> by James R. Holton and Gregory J. Hakim.</p>
-<p>According to them, &quot;Vorticity, the microscopic measure of rotation in a fluid, is a vector field defined as the curl of velocity. The absolute vorticity <img src="https://render.githubusercontent.com/render/math?math=\large \omega_\alpha"> is the curl of the absolute velocity, whereas the relative vorticity <img src="https://render.githubusercontent.com/render/math?math=\large \omega"> is the curl of the relative velocity:</p>
+<p>According to them, &quot;Vorticity, the microscopic measure of rotation in a fluid, is a vector field defined as the curl of velocity. The relative vorticity <img src="https://render.githubusercontent.com/render/math?math=\large \omega"> is the curl of the relative velocity:</p>
 <img src="https://render.githubusercontent.com/render/math?math=\LARGE \omega_\alpha \equiv \nabla\times \U_\alpha">
-<p>which in Cartesian coordinates is analyzed to the following:</p>
+<p>which, in Cartesian coordinates, is analyzed to the following:</p>
 <img src="https://render.githubusercontent.com/render/math?math=\LARGE \omega = (\frac{\partial w}{\partial y} - \frac{\partial v}{\partial z}, \frac{\partial u}{\partial z} - \frac{\partial w}{\partial x}, \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y})">
 <p>After performing scale analysis on the above equation, it appears that the horizontal components are negligible, and therefore only the vertical component is used, leading to the following equation for relative vorticity:</p>
 <img src="https://render.githubusercontent.com/render/math?math=\LARGE \zeta = \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y}"> 
