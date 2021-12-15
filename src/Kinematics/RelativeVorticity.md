@@ -3,22 +3,31 @@
 In a way, wind is in a continuous dance mode around the globe. Nonetheless, it is also performing a local dance, spinning around itself. In dynamic meteorology, this movement of the wind is described by a quantity termed as "relative vorticity". Briefly, relative vorticity is a measure of the spin of an air mass. 
 
 ## First Thoughts
- 
 
-<img src="./ECMWF_RelVort_250hPa.png">
+Relative vorticity is an invaluable variable for meteorologists and climatologists. 
 
-<img src="./ECMWF_RelVort_850hPa.png">
+<p align="center">
+  <img src="./ECMWF_RelVort_250hPa.png" width="600">
+  <br>
+    <em>Relative vorticity at 250 hPa from the ECMWF forecasting system for 6 December 2021 at 12.00 UTC over southern Africa </em>
+</p>
+
+<p align="center">
+  <img src="./ECMWF_RelVort_850hPa.png" width="600">
+  <br>
+    <em>Relative vorticity at 850 hPa from the ECMWF forecasting system for 6 December 2021 at 12.00 UTC over southern Africa </em>
+</p>
 
   
 ## Theory
 
 Theory is taken from the book <a href="https://www.amazon.com/Introduction-Dynamic-Meteorology-International-Geophysics/dp/0123848660"> "An Introduction to Dynamic Meteorology" </a> by James R. Holton and Gregory J. Hakim.\
 
-According to them, "Vorticity, the microscopic measure of rotation in a fluid, is a vector field defined as the curl of velocity. The absolute vorticity <img src="https://render.githubusercontent.com/render/math?math=\large \omega_\alpha"> is the curl of the absolute velocity, whereas the relative vorticity <img src="https://render.githubusercontent.com/render/math?math=\large \omega"> is the curl of the relative velocity:
+According to them, "Vorticity, the microscopic measure of rotation in a fluid, is a vector field defined as the curl of velocity. The relative vorticity <img src="https://render.githubusercontent.com/render/math?math=\large \omega"> is the curl of the relative velocity:
 
 <img src="https://render.githubusercontent.com/render/math?math=\LARGE \omega_\alpha \equiv \nabla\times \U_\alpha">
 
-which in Cartesian coordinates is analyzed to the following:
+which, in Cartesian coordinates, is analyzed to the following:
 
 <img src="https://render.githubusercontent.com/render/math?math=\LARGE \omega = (\frac{\partial w}{\partial y} - \frac{\partial v}{\partial z}, \frac{\partial u}{\partial z} - \frac{\partial w}{\partial x}, \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y})">
 
