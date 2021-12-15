@@ -22,12 +22,10 @@ def vorticity(u, v, *, dx=None, dy=None, x_dim=-1, y_dim=-2):
     r"""Calculate the vertical vorticity of the horizontal wind.
 
 ```
-![equation](http://www.sciweavers.org/tex2img.php?eq=1%2Bsin%28mc%5E2%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
 
 The key information is provided in lines 65-57, where we see that: 
 
-![\Large \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y}](https://latex.codecogs.com/svg.latex?\Large&space;\frac{\partial v}{\partial x} - \frac{\partial u}{\partial y})
-
+<img src="https://render.githubusercontent.com/render/math?math=\LARGE \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y}">
 
 
 ```
