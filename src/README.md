@@ -3,7 +3,7 @@
 Hi!\
 My name is <a href="https://www.geographical-affairs.com/"> Maria Chara Karypidou </a> and I am a PhD candidate in Climatology.\
 I am located at the Department of Meteorology and Climatology, at the <a href="https://www.auth.gr/en/"> Aristotle University of Thessaloniki</a>, in Greece.\
-This tiny dot of the internet is my attempt to communicate bits of code with some functionality in climate sciences. This is a work in progress and more chapters and sub-chapters will be added gradually.\
+This tiny dot of the internet is my attempt to communicate bits of code with some functionality in climate sciences. This is a work in progress and more chapters and sub-chapters will be added gradually.
 
 For any comment, correction or tutorial suggestion please contact me at: karypidou@geo.auth.gr
 
