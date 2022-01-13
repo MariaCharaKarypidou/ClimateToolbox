@@ -6,7 +6,7 @@ As discussed in the <a href="https://mariacharakarypidou.github.io/ClimateToolbo
 
 
 <p align="center">
-  <img src="./Coriolis_effect.png" width="600">
+  <img src="./Coriolis_effect.png" width="400">
   <br>
     <em>Relative vorticity at 250 hPa from the ECMWF forecasting system for 6 December 2021 at 12.00 UTC over southern Africa.</em>
 </p>
