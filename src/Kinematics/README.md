@@ -2,8 +2,8 @@
 
 1) <a href="https://mariacharakarypidou.github.io/ClimateToolbox/Kinematics/RelativeVorticity.html"> Relative Vorticity </a>
 2) <a href="https://mariacharakarypidou.github.io/ClimateToolbox/Kinematics/AbsoluteVorticity.html"> Absolute Vorticity </a>
-3) <a href="https://mariacharakarypidou.github.io/ClimateToolbox/Kinematics/VorticityAdvection.html"> VorticityAdvection </a>
-4) 
+3) <a href="https://mariacharakarypidou.github.io/ClimateToolbox/Kinematics/VorticityAdvection.html"> Vorticity Advection </a>
+
 More coming soon...
 
 <footer>
